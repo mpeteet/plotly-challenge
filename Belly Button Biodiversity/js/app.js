@@ -1,9 +1,11 @@
+// Create a function that uses D3 to fetch the JSON data and creates a plot for an ID
+
 var jsData;
 
 function init(){
     var selector = d3.select("#selDataset");
 
-    d3.json("samples.json").then((data) =>{
+    d3.json("data/samples.json").then((data) =>{
       jsData = data;
         var subjectID = data.names;
         subjectID.forEach((ID) => {
@@ -19,7 +21,7 @@ function init(){
 }
   
   function updateCharts(sample) {    
-    d3.json("samples.json").then((data) => {
+    d3.json("data/samples.json").then((data) => {
     var samples = data.samples;
     var filterArray = samples.filter(sampleObject => sampleObject.id == sample);
     var result = filterArray[0];
@@ -104,9 +106,9 @@ function init(){
 //     });
 //   }
   
-  function optionChanged(newSample) {
-    updateMetadata(newSample);
-    updateCharts(newSample);
-  }
+  // function optionChanged(newSample) {
+  //   updateMetadata(newSample);
+  //   updateCharts(newSample);
+  // }
   
-  init();
+  // init();
