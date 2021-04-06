@@ -64,11 +64,25 @@ function getPlot(id) {
       y: samples.sample_values,
       mode: "markers",
       marker: {
-        size: samples.samples_values,
+        size: samples.sample_values,
         color: samples.otu_ids,
       },
       text: samples.otu_labels
     };
+
+    // var traceB = [
+    //   {
+    //     x: samples.otu_ids,
+    //     y: samples.sample_values,
+    //     text: samples.otu_labels,
+    //     mode: "markers",
+    //     marker: {
+    //       size: samples.sample_values,
+    //       color: samples.otu_ids,
+    //       colorscale: "Earth"
+    //   }
+    //   }
+    // }]
 
     // Create a variable to define the plots layout -- bubble chart
     var layoutB = {
