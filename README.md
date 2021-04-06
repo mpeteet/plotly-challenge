@@ -9,7 +9,9 @@ Using the D3 library I read in a JSON file of samples from the study that was pe
 -- A Bar Chart of the top ten microbe types in that participant
 
 -- A Bubble Chart of each microbe sample
-.
+
+
+https://mpeteet.github.io/plotly-challenge/Belly%20Button%20Biodiversity/
 
 
 
